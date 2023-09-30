@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "gh-expand-all",
+    "version": "1.0",
+    "description": "Automatically expand all Github comments.",
+    "icons": {
+        "48": "border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.github.com/*"],
+            "js": ["expand.js"]
+        }
+    ]
+}
